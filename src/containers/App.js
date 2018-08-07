@@ -2,17 +2,16 @@ import React, { Component } from 'react';
 import Main from '../components/Main';
 import Sidebar from '../components/Sidebar';
 import './App.css';
-import { contacts } from './static-data';
-import store from "./store";
+import store from "../store";
 import _ from 'lodash';
 
 const App = () => {
-  const { contacts } = store.getState();
-
+  const { contacts, user, activeUserId } = store.getState();
+  // console.log(_.values(contacts));
   return (
     <div className="App">
       <Sidebar contacts={_.values(contacts)} />
-      <Main />
+      <Main user={user} activeUserId={activeUserId} />
     </div>
   );
 };

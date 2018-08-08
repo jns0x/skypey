@@ -5,6 +5,8 @@ import _ from "lodash";
 import Chats from "../components/Chats";
 import MessageInput from "./MessageInput";
 
+import './ChatWindow.css';
+
 
 const ChatWindow = ({ activeUserId }) => {
   const state = store.getState();

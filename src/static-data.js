@@ -1,3 +1,4 @@
+// import txtgen from "./txtgen.js";
 const shortid = require("shortid"); // shortid.generate() returns a unique "short" id
 const txtgen = require("txtgen"); // txtgen.sentence() returns random "readable" sentences
 const faker = require("faker"); // faker is used for generating random fake data.
